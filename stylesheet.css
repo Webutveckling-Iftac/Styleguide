@@ -90,3 +90,6 @@ button.negative-button{
     border: 4px;
     border-style: dashed;
 }
+div.para{
+    color: orange;
+}
