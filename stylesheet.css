@@ -1,0 +1,22 @@
+div.header{
+	color: #7B68EE;  /** MediumSlateBlue **/
+}
+body{
+	background: #ADD8E6; /** LightBlue **/
+}
+table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+tr > td{
+	padding: 0.4rem;
+	text-align: centre;
+	border: 2px solid #ccc;
+}
+tr:nth-child(even){
+	background: #BDB76B; /**DarkKhaki **/
+}
+tr:nth-child(odd){
+	background: #B8860B; /**DarkGolderRod **/
+}
