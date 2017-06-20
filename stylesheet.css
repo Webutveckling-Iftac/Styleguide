@@ -7,7 +7,13 @@ strong{
     color: orange;
 }
 body{
-	background-color: brown; /** LightBlue **/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+48,8f0222+68,8f0222+68,6d0019+96 */
+background: #a90329; /* Old browsers */
+background: -moz-linear-gradient(top,  #a90329 48%, #8f0222 68%, #8f0222 68%, #6d0019 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
 }
 table{
 	border-collapse: collapse;
@@ -50,5 +56,34 @@ button.button-small{
     padding: 6px 20px;
     background-color: black;
     border-color: yellow;
+    border-style: dashed;
+}
+
+button.function-button{
+    color: yellow;
+    font-size: 15px;
+    padding: 1px 20px;
+    background-color: black;
+    border-color: yellow;
+    border: 4px;
+    border-style: dashed;
+}
+button.positive-button{
+    color: black;
+    font-size: 15px;
+    padding: 1px 20px;
+    margin:auto;
+    background-color: lawngreen;
+    border-color: black;
+    border: 4px;
+    border-style: dashed;
+}
+button.negative-button{
+    color: black;
+    font-size: 15px;
+    padding: 1px 20px;
+    background-color: red;
+    border-color: black;
+    border: 4px;
     border-style: dashed;
 }
