@@ -159,3 +159,24 @@ div.para{
     display: inline-block;
     margin-right: -4px;
   }
+    
+    p.notification{
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    p.notification{
+        background-color: cadetblue;
+    }
+    
+    p.success{
+        background-color: green;
+    }
+    
+    p.warning{
+        background-color: fuchsia;
+    }
+    
+    p.error{
+        background-color: darkorchid;
+    }
