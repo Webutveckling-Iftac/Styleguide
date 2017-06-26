@@ -1,11 +1,9 @@
 html{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+48,8f0222+68,8f0222+68,6d0019+96 */
-background: #a90329; /* Old browsers */
-background: -moz-linear-gradient(top,  #a90329 48%, #8f0222 68%, #8f0222 68%, #6d0019 96%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
-     
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a90329 48%, #8f0222 68%, #8f0222 68%, #6d0019 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */ 
 }
 h1, h2, h3, h4{
 	color: yellow;
@@ -15,11 +13,6 @@ h1, h2, h3, h4{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-strong{
-    color: orange;
-}
-body{
 }
 table, tr, td{
 	border-collapse: collapse;
@@ -38,7 +31,6 @@ tr:nth-child(odd){
 }
 ul, li{
     list-style:circle;
-    
 }
 button.button-big{
     color: yellow;
@@ -50,7 +42,6 @@ button.button-big{
     border-color: yellow;
     border-style: dashed;
     border-radius: 14px
-
 }
 button.button-medium{
     color: yellow;
@@ -101,14 +92,6 @@ button.negative-button{
     border: 4px;
     border-style: dashed;
     border-radius: 14px
-    
-    
-}
-div.para{
-    color: orange;
-}
-.para{
-    color:orange;
 }
 .left {
     float: left;
@@ -163,94 +146,104 @@ div.para{
     line-height: 50px;
     font-size: 1.4em;
   }
- 
-  /* Option 1 - Display Inline */
-  .nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
     
-    p.notification{
-        border-radius: 5px;
-        padding: 10px;
-    }
+.nav li {
+display: inline-block;
+margin-right: -4px;
+}
     
-    p.notification{
-        background-color: cadetblue;
-    }
-    
-    p.success{
-        background-color: green;
-    }
-    
-    p.warning{
-        background-color: fuchsia;
-    }
-    
-    p.error{
-        background-color: darkorchid;
-    }
-    
-    .loader {
-    border-top: 10px solid #ffff00;
-    border-left: 10px solid;
-    border-right: 10px solid;
-    border-bottom: 10px solid #ffff00;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    animation: spin 3s linear infinite;
+.notification > div{
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+div.success{
+    background-color: green;
+}
+
+div.warning{
+    background-color: fuchsia;
+}
+
+div.error{
+    background-color: darkorchid;
+}
+
+.loader {
+border-top: 10px solid #ffff00;
+border-left: 10px solid;
+border-right: 10px solid;
+border-bottom: 10px solid #ffff00;
+border-radius: 50%;
+width: 25px;
+height: 25px;
+animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-    .neutralpanel{
-        
-        background-color:#f28d13;
-        border: 5px;
-        border-top-color: black;
-        border-bottom-color: black;
-        border-bottom-width: thin;
-        border-left-color: #f28d13;
-        border-right-color: #f28d13;
-        border-right-width: thin;
-        border-bottom-left-radius: 35px;
-        border-style:inset;
-        border-right-style: hidden;
-        padding-left: 15px;
-        padding-right: 15px;  
-    }
-    .positivepanel{
-          background-color:#13adf2;
-        border: 5px;
-        border-top-color: black;
-        border-bottom-color: black;
-        border-bottom-width: thin;
-        border-left-color: #13adf2;
-        border-right-color: #13adf2;
-        border-bottom-left-radius: 35px;
-        border-style:inset;
-        border-right-style: hidden;
-        padding-left: 15px;
-        padding-right: 15px; 
-    }
-    .negativepanel{
-          background-color:#ea3255;
-        border: 5px;
-        border-top-color: black;
-        border-bottom-color: black;
-        border-bottom-width: thin;
-        border-left-color: #ea3255;
-        border-right-color: #ea3255;
-        border-bottom-left-radius: 35px;
-        border-style:inset;
-        border-right-style: hidden;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    @keyframes alterheadercolors{
-        from {color:yellow}
-        to {color:orange}
-    }
+.neutralpanel{
+
+    background-color:#f28d13;
+    border: 5px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: thin;
+    border-left-color: #f28d13;
+    border-right-color: #f28d13;
+    border-right-width: thin;
+    border-bottom-left-radius: 35px;
+    border-style:inset;
+    border-right-style: hidden;
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+.positivepanel{
+      background-color:#13adf2;
+    border: 5px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: thin;
+    border-left-color: #13adf2;
+    border-right-color: #13adf2;
+    border-bottom-left-radius: 35px;
+    border-style:inset;
+    border-right-style: hidden;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.negativepanel{
+      background-color:#ea3255;
+    border: 5px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: thin;
+    border-left-color: #ea3255;
+    border-right-color: #ea3255;
+    border-bottom-left-radius: 35px;
+    border-style:inset;
+    border-right-style: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@keyframes alterheadercolors{
+    from {color:yellow}
+    to {color:orange}
+}
+.form{
+    background-color: #f28d13;
+    border: 5px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: thin;
+    border-left-color: black;
+    border-right-color: #f28d13;
+    border-right-width: thin;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-style:inset;
+    border-right-style: hidden;
+}

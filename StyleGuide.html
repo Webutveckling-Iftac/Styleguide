@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Styles 'n Stuff</title>
+    <title>90's Styleguide</title>
    <link rel="stylesheet" href="stylesheet.css"> 
 </head>
-
-<body>
-    
-    <p style="color:orange;">Nagivation:</p>
-    
-    <div class="nav">
-      <ul>
-        <li><a class="active" href="#sitenav">Home</a></li>
-        <li><a href="#headers">
-        Headers</a></li>
-        <li><a href="#fText">
-        Text</a></li>
-        <li><a href="#tables">
-        Tables</a></li>
-        <li><a href="#buttons">
-        Buttons</a></li>
-        <li><a href="#notifications">
-        Notifications</a></li>
-      </ul>
+<body>    
+    <div id="navigation" class="nav">
+      <h3>Navigation:</h3>
+        <ul>
+            <li><a class="active" href="#sitenav">
+                Home</a></li>
+            <li><a href="#headers">
+                Headers</a></li>
+            <li><a href="#fText">
+                Text</a></li>
+            <li><a href="#tables">
+                Tables</a></li>
+            <li><a href="#buttons">
+                Buttons</a></li>
+            <li><a href="#notifications">
+                Notifications</a></li>
+        </ul>
     </div>
-    <br>
-    
-    <div>
-        <strong id="headers">Header styles:</strong>
-        
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-            
-        </div>
-         <br>
-    <div class="para">
-        <strong id="ftext">Floating text</strong><br>
-        <br>
-        <p>
+    <div id="headers">
+        <h3>Header styles:</h3>
+            <h1>Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+    </div>
+    <div id="ftext">
+        <h3>Floating text:</h3>
             <b>Bold text</b>, 
             <i>Italic Text</i>, 
             <em>Emphasized text</em>, 
@@ -49,131 +40,135 @@
             <ins>Inserted text</ins>, 
             <sub>Subscript text</sub>, 
             <sup>Superscript text</sup>
-        </p>
-    </div><br>
-        <br>
-    <strong id="tables">Table and list styles:</strong>
-    <div style="margin: 20px">
-        
-    <table class="left">
-          <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td> 
-    <td>55</td>
-  </tr>
-  <tr>
-    <td>Emil</td>
-    <td>Steklund</td> 
-    <td>27</td>
-  </tr>
-        <tr>
-        <td>Herp</td>
-            <td>Derp</td>
-            <td>5</td>
-        </tr>
-        <tr>
-        <td>Lars</td>
-            <td>Newman</td>
-            <td><del>30</del> rip</td>
-        </tr>
-        </table>
-        
+    </div>
+    <div id="tables">
+        <h3>Table and list styles:</h3>
+        <table class="left">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td> 
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>Emil</td>
+                <td>Steklund</td> 
+                <td>27</td>
+                </tr>
+                <tr>
+                    <td>Herp</td>
+                    <td>Derp</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Lars</td>
+                    <td>Newman</td>
+                    <td><del>30</del> rip</td>
+                </tr>
+            </table>
         <table class="right">
-        <tr>
-            <td>
-                <ul>
-                    <li>
-                    Monday
-                        </li>
-                    <li>
-                    Tuesday
-                        </li>
-                    <li>
-                    Wednesday
-                        </li>
-                    <li>
-                    Thursday
-                        </li>
-                    <li>
-                    Friday
-                        </li>
-                    <li>
-                    Saturday
-                        </li>
-                    <li>
-                    Sunday
-                    </li>
-                </ul>
-            </td>
-            </tr>
-        </table>
-        
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Monday
+                            </li>
+                            <li>
+                                Tuesday
+                            </li>
+                            <li>
+                                Wednesday
+                            </li>
+                            <li>
+                                Thursday
+                            </li>
+                            <li>
+                                Friday
+                            </li>
+                            <li>
+                                Saturday
+                            </li>
+                            <li>
+                                Sunday
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
     </div>
-    <br>
-    <br>
-    <br>
-    <strong id="buttons">Button styles:</strong>
-    <div>
-        <button class="button-big">
-        <p>button-big</p>
-        </button>
-        <button class="button-medium">
-        <p>Button-medium</p>
-        </button>
-        <button class="button-small">
-        <p>Button-small</p>
-        </button>
-        <br><br>
-        <button class="function-button">
-        <p>function-button</p>
-        </button>
-        <button class="negative-button">
-        <p>negative-button</p>
-        </button>
-        <button class="positive-button">
-        <p>positive-button</p>
-        </button>
-   </div>
-    <br>
-    <br>
-    <div class="para">
-        <strong id="notifications">Header styles:</strong>
-        <p class="notification notification"><b>Attention:</b>This is a notification to the user!
-        </p>
-        <p class="notification success"><b>Attention:</b>This is a success notification to the user!
-        </p>
-        <p class="notification warning"><b>Attention:</b>This is a warning to the user!
-        </p>
-        <p class="notification error"><b>Attention:</b>This is a error notification to the user!
-        </p>
+    <div id="buttons">
+        <h3>Button styles:</h3>
+            <button class="button-big">
+                Button-big
+            </button>
+            <button class="button-medium">
+                Button-medium
+            </button>
+            <button class="button-small">
+                Button-small
+            </button>
+            <br>
+            <br>
+            <button class="function-button">
+                Function-button
+            </button>
+            <button class="negative-button">
+                Negative-button
+            </button>
+            <button class="positive-button">
+                Positive-button
+            </button>
     </div>
-    <strong id="loader">Loader style:</strong>
-    <br><br>
-    <div class="loader"></div><div>
-    <br>
-    <div>
-        <p><strong class="para">
-            Panel styles:</strong></p>
-    <div class="neutralpanel">
-        <p>Neutral panel. Make panels great again.</p>
-        </div>
-        <br>
-        <div class="positivepanel">
-        <p>
-            Positive panel
-            </p>
-        </div>
-        <br>
-        <div class="negativepanel">
-        <p>Negative panel.</p>
-        </div>
+    <div id="notifications" class="notification">
+        <h3>Notification styles:</h3>
+            <div><b>Attention:</b>This is a notification to the user!
+            </div>
+            <div class="success"><b>Attention:</b>This is a success notification to the user!
+            </div>
+            <div class="warning"><b>Attention:</b>This is a warning to the user!
+            </div>
+            <div class="error"><b>Attention:</b>This is a error notification to the user!
+            </div>
     </div>
-    </body>
-<footer>
-</footer>
+        <h3>Loader style:</h3>
+            <div>
+                <div class="loader"></div>
+            </div>
+    <div id="panels">
+        <h3>Panel style:</h3>
+            <div class="neutralpanel">
+                Neutral panel. Make panels great again
+            </div>
+            <div class="positivepanel">
+                Positive panel
+            </div>
+            <div class="negativepanel">
+                Negative panel
+            </div>
+    </div>
+    <div id ="forms">
+        <h3>Form styles:</h3>
+        <form class="form">
+            First Name:
+            <input type="text">
+            <br>
+            Last Name:
+            <input type="text">
+            <br>
+            Gender:
+            <br>
+            <input type="radio" name="gender" value="male"> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other" checked> Other
+            <br>
+            <input type="submit" name="submit" value="Register">
+        </form>
+    </div>
+</body>
 </html>
