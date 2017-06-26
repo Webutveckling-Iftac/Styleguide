@@ -17,20 +17,24 @@ strong{
 }
 body{
 }
-table{
+table, tr, td{
 	border-collapse: collapse;
     border: 2px solid black;
 }
 tr > td{
-	padding: 0.4em;
-	text-align: centre;
-	border: 2px solid black;
+	padding: 5px;
+    padding-right: 20px;
+	text-align: center;
 }
 tr:nth-child(even){
-	background: #A9A9A9; /**DarkGrey **/
+	background: #e54f22;
 }
 tr:nth-child(odd){
-	background: #F0FFFF; /**Azure **/
+	background: #e5881c; 
+}
+ul, li{
+    list-style:circle;
+    
 }
 button.button-big{
     color: yellow;
@@ -41,7 +45,7 @@ button.button-big{
     background-color: black;
     border-color: yellow;
     border-style: dashed;
-    
+    border-radius: 14px
 
 }
 button.button-medium{
@@ -51,6 +55,7 @@ button.button-medium{
     background-color: black;
     border-color: yellow;
     border-style: dashed;
+    border-radius: 14px
 }
 button.button-small{
     color: yellow;
@@ -59,16 +64,18 @@ button.button-small{
     background-color: black;
     border-color: yellow;
     border-style: dashed;
+    border-radius: 14px
 }
 
 button.function-button{
     color: yellow;
     font-size: 15px;
-    padding: 1px 20px;
+    padding: 1px 12px;
     background-color: black;
     border-color: yellow;
     border: 4px;
     border-style: dashed;
+    border-radius: 14px
 }
 button.positive-button{
     color: black;
@@ -79,6 +86,7 @@ button.positive-button{
     border-color: black;
     border: 4px;
     border-style: dashed;
+    border-radius: 14px 
 }
 button.negative-button{
     color: black;
@@ -88,7 +96,66 @@ button.negative-button{
     border-color: black;
     border: 4px;
     border-style: dashed;
+    border-radius: 14px
 }
 div.para{
     color: orange;
 }
+.left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.right {
+    float: auto;
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px
+}
+.nav ul {
+  list-style: none;
+  background-color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #f5d210;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #ea923a;
+  color: #000000;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
