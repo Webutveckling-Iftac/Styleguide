@@ -11,6 +11,10 @@ h1, h2, h3, h4{
 	color: yellow;
     text-shadow: 3px 10px 5px black;
     font-family: sans-serif;
+    animation-name: alterheadercolors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 strong{
     color: orange;
@@ -97,9 +101,14 @@ button.negative-button{
     border: 4px;
     border-style: dashed;
     border-radius: 14px
+    
+    
 }
 div.para{
     color: orange;
+}
+.para{
+    color:orange;
 }
 .left {
     float: left;
@@ -116,14 +125,15 @@ div.para{
 .nav ul {
   list-style: none;
   background-color: #000000;
-  text-align: center;
-  padding: 0;
+  text-align: left;
   margin: 0;
+  padding: 0;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
+  text-align: center;
   height: 40px;
   border-bottom: 1px solid #888;
 }
@@ -179,4 +189,52 @@ div.para{
     
     p.error{
         background-color: darkorchid;
+    }
+    .neutralpanel{
+        
+        background-color:#f28d13;
+        border: 5px;
+        border-top-color: black;
+        border-bottom-color: black;
+        border-bottom-width: thin;
+        border-left-color: #f28d13;
+        border-right-color: #f28d13;
+        border-right-width: thin;
+        border-bottom-left-radius: 35px;
+        border-style:inset;
+        border-right-style: hidden;
+        padding-left: 15px;
+        padding-right: 15px;  
+    }
+    .positivepanel{
+          background-color:#13adf2;
+        border: 5px;
+        border-top-color: black;
+        border-bottom-color: black;
+        border-bottom-width: thin;
+        border-left-color: #13adf2;
+        border-right-color: #13adf2;
+        border-bottom-left-radius: 35px;
+        border-style:inset;
+        border-right-style: hidden;
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+    .negativepanel{
+          background-color:#ea3255;
+        border: 5px;
+        border-top-color: black;
+        border-bottom-color: black;
+        border-bottom-width: thin;
+        border-left-color: #ea3255;
+        border-right-color: #ea3255;
+        border-bottom-left-radius: 35px;
+        border-style:inset;
+        border-right-style: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @keyframes alterheadercolors{
+        from {color:yellow}
+        to {color:orange}
     }
