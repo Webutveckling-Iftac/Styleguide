@@ -20,6 +20,10 @@ strong{
     color: orange;
 }
 body{
+    width:100%;
+    min-width:650px;
+    max-width:2000px
+        margin:auto;
 }
 table, tr, td{
 	border-collapse: collapse;
@@ -48,9 +52,8 @@ button.button-big{
     padding: 25px 80px;
     background-color: black;
     border-color: yellow;
-    border-style: dashed;
-    border-radius: 14px
-
+    border-style: double;
+    border-radius: 14px;
 }
 button.button-medium{
     color: yellow;
@@ -58,7 +61,7 @@ button.button-medium{
     padding: 14px 40px;
     background-color: black;
     border-color: yellow;
-    border-style: dashed;
+    border-style: double;
     border-radius: 14px
 }
 button.button-small{
@@ -67,7 +70,7 @@ button.button-small{
     padding: 6px 20px;
     background-color: black;
     border-color: yellow;
-    border-style: dashed;
+    border-style: double;
     border-radius: 14px
 }
 
@@ -78,7 +81,7 @@ button.function-button{
     background-color: black;
     border-color: #ffff00;
     border: 4px;
-    border-style: dashed;
+    border-style: double;
     border-radius: 14px
 }
 button.positive-button{
@@ -89,7 +92,7 @@ button.positive-button{
     background-color: lawngreen;
     border-color: black;
     border: 4px;
-    border-style: dashed;
+    border-style: double;
     border-radius: 14px 
 }
 button.negative-button{
@@ -99,11 +102,19 @@ button.negative-button{
     background-color: red;
     border-color: black;
     border: 4px;
-    border-style: dashed;
-    border-radius: 14px
-    
-    
+    border-style: double;
+    border-radius: 14px;
 }
+button:hover{
+    animation-name: buttonhover;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+    @keyframes buttonhover{
+        from{border-style: dashed;}
+        to{border-style:double}
+    }
 div.para{
     color: orange;
 }
@@ -155,14 +166,15 @@ div.para{
   cursor: default;
 }
  
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px){
   .nav li {
     width: 120px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
-  }
+    }
+}
  
   /* Option 1 - Display Inline */
   .nav li {
@@ -171,8 +183,9 @@ div.para{
   }
     
     p.notification{
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 10px;
+        
     }
     
     p.notification{
@@ -192,19 +205,24 @@ div.para{
     }
     
     .loader {
+    margin: auto;
+    width: 25px;
+    height: 25px;
     border-top: 10px solid #ffff00;
     border-left: 10px solid;
     border-right: 10px solid;
     border-bottom: 10px solid #ffff00;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    animation: spin 3s linear infinite;
+    animation: spin 1.5s infinite;
+    animation-direction:alternate;
+    
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+    from{height: 25px; width: 25}
+    to{height: 1px; width: 1px;}
 }
     .neutralpanel{
         
@@ -220,7 +238,7 @@ div.para{
         border-style:inset;
         border-right-style: hidden;
         padding-left: 15px;
-        padding-right: 15px;  
+        padding-right: 15px; 
     }
     .positivepanel{
           background-color:#13adf2;
@@ -235,6 +253,7 @@ div.para{
         border-right-style: hidden;
         padding-left: 15px;
         padding-right: 15px; 
+        
     }
     .negativepanel{
           background-color:#ea3255;
@@ -253,4 +272,8 @@ div.para{
     @keyframes alterheadercolors{
         from {color:yellow}
         to {color:orange}
+    }
+    @keyframes gonuts{
+        from{background-color: red}
+        to{background-color: aqua}
     }
