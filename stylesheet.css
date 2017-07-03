@@ -183,6 +183,8 @@ button:hover{
     background-color: cadetblue;
     border-radius: 5px;
     padding: 10px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 .notification--success{
@@ -244,17 +246,14 @@ button:hover{
     to {color:orange}
 }
 .form{
+    border-style:inset;
     padding: 5px;
-    background-color: #f28d13;
     border: 5px;
+    background-color: #f28d13;
     border-top-color: black;
     border-bottom-color: black;
-    border-bottom-width: thin;
     border-left-color: black;
     border-right-color: #f28d13;
-    border-right-width: thin;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
 }
