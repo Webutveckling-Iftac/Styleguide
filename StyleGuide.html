@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="stylesheet.css"> 
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
-    <body id ="myBody">
+    <body id ="myBody">  
         <div id=mainDiv>
             <div id="navigation" class="nav">
                 <h3>Navigation:</h3>
@@ -106,43 +106,42 @@
                 <h3>Button styles:</h3>
                 <div class="container">
                     <div class="containerColumn">
-                        <button onclick="mySealFunction()" class="button-big">
+                        <button onclick="mySealFunction()" class="button--big">
                             Button-big
                         </button>
-                        <button onclick ="myZoomDogFunction()" class="button-medium">
+                        <button onclick ="myZoomDogFunction()" class="button--medium">
                             Button-medium
                         </button>
-                        <button onclick="myLamaFunction()" class="button-small">
+                        <button onclick="myLamaFunction()" class="button--small">
                             Button-small
                         </button>
                     </div>
                     <br>
+                    <br>
                     <div class="containerColumn">
-                        <button id="function-button" onclick="infiniteDoge()" class="function-button">
+                        <button onclick="infiniteDoge()">
                             Function-button
                         </button>
-                        <button onclick="stopThis()" class="negative-button">
+                        <button onclick="stopThis()" class="negative--button">
                             Negative-button
                         </button>
-                        <button class="positive-button" onclick="on()">
+                        <button class="positive--button" onclick="on()">
                             Positive-button
                         </button>
                     </div>
-
                 </div>
             </div>
-            <div id="notifications" class="notification">
+            <div id="notifications">
                 <h3>Notification styles:</h3>
-                <div><b>Attention:</b>This is a notification to the user!
+                <div class="notification"><b>Attention: </b>This is a notification to the user!
                 </div>
-                <div class="success"><b>Attention:</b>This is a success notification to the user!
+                <div class="notification notification--success"><b>Attention: </b>This is a success notification to the user!
                 </div>
-                <div class="warning"><b>Attention:</b>This is a warning to the user!
+                <div class="notification notification--warning"><b>Attention: </b>This is a warning to the user!
                 </div>
-                <div class="error"><b>Attention:</b>This is a error notification to the user!
+                <div class="notification notification--error"><b>Attention: </b>This is a error notification to the user!
                 </div>
             </div>
-            <br>
             <br>
 
             <h3>Loader style:</h3>
@@ -153,13 +152,13 @@
             <br><br><br>
             <div id="panels">
                 <h3>Panel style:</h3>
-                <div class="neutralpanel">
-                    Neutral panel. Make panels great again
+                <div class="panel panel--neutral">
+                    Neutral panel
                 </div>
-                <div class="positivepanel">
+                <div class="panel panel--positive">
                     Positive panel
                 </div>
-                <div class="negativepanel">
+                <div class="panel panel-negative">
                     Negative panel
                 </div>
             </div>
@@ -167,21 +166,13 @@
             <div id ="forms">
                 <h3>Form style:</h3>
                 <form class="form">
-                    First Name:
-                    <input type="text">
-                    <br>
-                    Last Name:
-                    <input type="text">
-                    <br>
-                    Gender:
-                    <br>
-                    <input type="radio" name="gender" value="male"> Male
-                    <br>
-                    <input type="radio" name="gender" value="female"> Female
-                    <br>
-                    <input type="radio" name="gender" value="gender" checked> Apache attack helicopter
-                    <br>
-                    <input type="submit" name="submit" value="Register">
+                    <label for="fName">Name:</label><input id="fName"/><br>
+                    <label for="sName">Surname:</label><input id="sName"/><br>
+                    Gender:<br>
+                    <label for="male">Male:</label><input type="radio" id="male" name="male" value="male"/><br>
+                    <label for="female">Female:</label><input type="radio" id="female" name="female" value="female"/><br>
+                    <label for="other">Other:</label><input type="radio" id="other" name="other" value="other"/><br>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
             <img id="imgtest" />
@@ -202,7 +193,6 @@
                     var string2
                     ='http://i1.kym-cdn.com/photos/images/newsfeed/000/308/455/d6e.jpg'
                     document.getElementById("myBody").style.backgroundImage = "url('" + string2 + "')";
-
                 }
             </script>
             <script>

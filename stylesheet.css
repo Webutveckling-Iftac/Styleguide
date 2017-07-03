@@ -5,6 +5,7 @@ html{
     background: linear-gradient(to bottom,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */ 
 }
+
 h1, h2, h3, h4{
     color: yellow;
     text-shadow: 3px 10px 5px black;
@@ -21,57 +22,33 @@ body{
     max-width:2000px
         margin:auto;
 }
+
 table, tr, td{
     border-collapse: collapse;
     border: 2px solid black;
 }
+
 tr > td{
     padding: 5px;
     padding-right: 20px;
     text-align: center;
 }
+
 tr:nth-child(even){
     background: #e54f22;
 }
+
 tr:nth-child(odd){
     background: #e5881c; 
 }
+
 ul, li{
     list-style:circle;
 }
-button.button-big{
+
+button{
     color: yellow;
     text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    padding: 25px 80px;
-    background-color: black;
-    border-color: yellow;
-    border-style: double;
-    border-radius: 14px;
-    border-radius: 14px 
-}
-button.button-medium{
-    color: yellow;
-    font-size: 22px;
-    padding: 14px 40px;
-    background-color: black;
-    border-color: yellow;
-    border-style: double;
-    border-radius: 14px
-}
-button.button-small{
-    color: yellow;
-    font-size: 22px;
-    padding: 6px 20px;
-    background-color: black;
-    border-color: yellow;
-    border-style: double;
-    border-radius: 14px
-}
-
-button.function-button{
-    color: yellow;
     font-size: 15px;
     padding: 1px 12px;
     background-color: black;
@@ -80,27 +57,34 @@ button.function-button{
     border-style: double;
     border-radius: 14px
 }
-button.positive-button{
-    color: black;
-    font-size: 15px;
-    padding: 1px 20px;
-    margin:auto;
-    background-color: lawngreen;
-    border-color: black;
-    border: 4px;
-    border-style: double;
-    border-radius: 14px 
+
+button.button--big{
+    font-size: 22px;
+    padding: 25px 80px;
 }
-button.negative-button{
-    color: black;
-    font-size: 15px;
-    padding: 1px 20px;
-    background-color: red;
-    border-color: black;
-    border: 4px;
-    border-style: double;
-    border-radius: 14px;
+
+button.button--medium{
+    font-size: 22px;
+    padding: 14px 40px;
 }
+
+button.button--small{
+    font-size: 22px;
+    padding: 6px 20px;
+}
+
+button.negative--button{
+    color: #000000;
+    background-color: #ff0000;
+    border-color: #000000;
+}
+
+button.positive--button{
+    color: #000000;
+    background-color: #7cfc00;
+    border-color: #000000;
+}
+
 button:hover{
     animation-name: buttonhover;
     animation-duration: 0.5s;
@@ -112,27 +96,26 @@ button:hover{
     from{border-style: dashed;}
     to{border-style:double}
 }
-div.para{
-    color: orange;
+
+@keyframes buttonhover{
+    from{border-style: dashed;}
+    to{border-style:double}
 }
-.para{
-    color:orange;
-    =======
-    border-style: dashed;
-    border-radius: 14px
-}
+
 .left {
     float: left;
     width: 300px;
     padding: 10px;
     margin-right: 10px;
 }
+
 .right {
     float: auto;
     width: 300px;
     padding: 10px;
     margin-left: 10px
 }
+
 .nav ul {
     list-style: none;
     background-color: #000000;
@@ -140,6 +123,7 @@ div.para{
     margin: 0;
     padding: 0;
 }
+
 .nav li {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2em;
@@ -176,12 +160,12 @@ div.para{
     }
 }
 
-/* Option 1 - Display Inline */
 .nav li {
     display: inline-block;
     margin-right: -4px;
 }
 
+<<<<<<< HEAD
 p.notification{
     border-radius: 10px;
     padding: 10px;
@@ -195,7 +179,6 @@ p.notification{
 p.success{
     background-color: green;
 }
-
 
 .nav li {
     display: inline-block;
@@ -216,24 +199,23 @@ p.success{
     animation-direction:alternate;
 }
 
-.notification > div{
-    margin:3px;
+.notification{
     background-color: cadetblue;
     border-radius: 5px;
     padding: 10px;
-
-
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
-div.success{
+.notification--success{
     background-color: green;
 }
 
-div.warning{
+.notification--warning{
     background-color: fuchsia;
 }
 
-div.error{
+.notification--error{
     background-color: darkorchid;
 }
 
@@ -243,10 +225,8 @@ div.error{
     from{height: 25px; width: 25}
     to{height: 1px; width: 1px;}
 }
-.neutralpanel{
-    margin:3px;
 
-    background-color:#f28d13;
+.panel {
     border: 5px;
     border-top-color: black;
     border-bottom-color: black;
@@ -258,46 +238,21 @@ div.error{
     border-style:inset;
     border-right-style: hidden;
     padding-left: 22px;
-    padding-right: 10px; 
+    padding-right: 15px; 
     padding-top:10px; 
     padding-bottom: 10px;
 }
-.positivepanel{
-    margin:3px;
 
+.panel--neutral{
+    background-color:#f28d13;
+}
+.panel--positive{
     background-color:#13adf2;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #13adf2;
-    border-right-color: #13adf2;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 22px;
-    padding-right: 15px;
-    padding-top:10px; 
-    padding-bottom: 10px;
-
 }
-.negativepanel{
-    margin:3px;
+.panel-negative{
     background-color:#ea3255;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #ea3255;
-    border-right-color: #ea3255;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 22px;
-    padding-right: 15px;
-    padding-top:10px; 
-    padding-bottom: 10px;
 }
+
 @keyframes alterheadercolors{
     from {color:yellow}
     to {color:orange}
@@ -306,67 +261,22 @@ div.error{
     from{background-color: red}
     to{background-color: aqua}
 }
-.neutralpanel{
 
-    background-color:#f28d13;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #f28d13;
-    border-right-color: #f28d13;
-    border-right-width: thin;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px;  
-}
-.positivepanel{
-    background-color:#13adf2;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #13adf2;
-    border-right-color: #13adf2;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px; 
-}
-.negativepanel{
-    background-color:#ea3255;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #ea3255;
-    border-right-color: #ea3255;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 @keyframes alterheadercolors{
     from {color:yellow}
     to {color:orange}
 }
 .form{
-    background-color: #f28d13;
+    border-style:inset;
+    padding: 5px;
     border: 5px;
+    background-color: #f28d13;
     border-top-color: black;
     border-bottom-color: black;
-    border-bottom-width: thin;
     border-left-color: black;
     border-right-color: #f28d13;
-    border-right-width: thin;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
 }
 .container{
     display: flex;
@@ -375,7 +285,7 @@ div.error{
 }
 .containerColumn{
     flex-direction: row;
-    display: grid
+    display: grid;
 }
 
 @keyframes fadeIn {
