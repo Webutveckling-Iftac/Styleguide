@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
     <body id ="myBody">
+        <div id=mainDiv>
             <div id="navigation" class="nav">
                 <h3>Navigation:</h3>
                 <ul>
@@ -123,98 +124,112 @@
                         <button onclick="stopThis()" class="negative-button">
                             Negative-button
                         </button>
-                        <button class="positive-button">
+                        <button class="positive-button" onclick="on()">
                             Positive-button
                         </button>
                     </div>
 
                 </div>
             </div>
-                <div id="notifications" class="notification">
-                    <h3>Notification styles:</h3>
-                    <div><b>Attention:</b>This is a notification to the user!
-                    </div>
-                    <div class="success"><b>Attention:</b>This is a success notification to the user!
-                    </div>
-                    <div class="warning"><b>Attention:</b>This is a warning to the user!
-                    </div>
-                    <div class="error"><b>Attention:</b>This is a error notification to the user!
-                    </div>
+            <div id="notifications" class="notification">
+                <h3>Notification styles:</h3>
+                <div><b>Attention:</b>This is a notification to the user!
                 </div>
-                <br>
-                <br>
+                <div class="success"><b>Attention:</b>This is a success notification to the user!
+                </div>
+                <div class="warning"><b>Attention:</b>This is a warning to the user!
+                </div>
+                <div class="error"><b>Attention:</b>This is a error notification to the user!
+                </div>
+            </div>
+            <br>
+            <br>
 
-                <h3>Loader style:</h3>
-                <div class="left">
-                    <div style="margn:auto"
-                         class="loader"></div>
+            <h3>Loader style:</h3>
+            <div class="left">
+                <div style="margn:auto"
+                     class="loader"></div>
+            </div>
+            <br><br><br>
+            <div id="panels">
+                <h3>Panel style:</h3>
+                <div class="neutralpanel">
+                    Neutral panel. Make panels great again
                 </div>
-                <br><br><br>
-                <div id="panels">
-                    <h3>Panel style:</h3>
-                    <div class="neutralpanel">
-                        Neutral panel. Make panels great again
-                    </div>
-                    <div class="positivepanel">
-                        Positive panel
-                    </div>
-                    <div class="negativepanel">
-                        Negative panel
-                    </div>
+                <div class="positivepanel">
+                    Positive panel
                 </div>
-                <br>
-                <div id ="forms">
-                    <h3>Form style:</h3>
-                    <form class="form">
-                        First Name:
-                        <input type="text">
-                        <br>
-                        Last Name:
-                        <input type="text">
-                        <br>
-                        Gender:
-                        <br>
-                        <input type="radio" name="gender" value="male"> Male
-                        <br>
-                        <input type="radio" name="gender" value="female"> Female
-                        <br>
-                        <input type="radio" name="gender" value="gender" checked> Apache attack helicopter
-                        <br>
-                        <input type="submit" name="submit" value="Register">
-                    </form>
+                <div class="negativepanel">
+                    Negative panel
                 </div>
-                <img id="imgtest" />
-                <script>
-                    function mySealFunction(){
-                        var string = 'http://i3.kym-cdn.com/photos/images/original/000/741/861/6b4.jpg'
-                        document.getElementById("myBody").style.backgroundImage = "url('" + string + "')";
-                    }
-                </script>
-                <script>
-                    function myLamaFunction(){
-                        var string1 = 'http://1.media.dorkly.cvcdn.com/90/96/4835b31f94f029df76a13fd9d47af5ba-doge.jpg'
-                        document.getElementById("myBody").style.backgroundImage = "url('" + string1 + "')";
-                    }
-                </script>
-                <script>
-                    function myZoomDogFunction(){
-                        var string2
-                        ='http://i1.kym-cdn.com/photos/images/newsfeed/000/308/455/d6e.jpg'
-                        document.getElementById("myBody").style.backgroundImage = "url('" + string2 + "')";
-                    }
-                </script>
-                <script>
-                    function infiniteDoge(){
-                        var string3 = 'https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif'
-                        document.getElementById("myBody").style.backgroundImage = "url('" + string3 + "')";
-                    }
-                </script>
-                <script>
-                    function stopThis(){
-                        var string4 = 'http://imgur.com/LtapkFv'
+            </div>
+            <br>
+            <div id ="forms">
+                <h3>Form style:</h3>
+                <form class="form">
+                    First Name:
+                    <input type="text">
+                    <br>
+                    Last Name:
+                    <input type="text">
+                    <br>
+                    Gender:
+                    <br>
+                    <input type="radio" name="gender" value="male"> Male
+                    <br>
+                    <input type="radio" name="gender" value="female"> Female
+                    <br>
+                    <input type="radio" name="gender" value="gender" checked> Apache attack helicopter
+                    <br>
+                    <input type="submit" name="submit" value="Register">
+                </form>
+            </div>
+            <img id="imgtest" />
+            <script>
+                function mySealFunction(){
+                    var string = 'http://i3.kym-cdn.com/photos/images/original/000/741/861/6b4.jpg'
+                    document.getElementById("myBody").style.backgroundImage = "url('" + string + "')";
+                }
+            </script>
+            <script>
+                function myLamaFunction(){
+                    var string1 = 'http://1.media.dorkly.cvcdn.com/90/96/4835b31f94f029df76a13fd9d47af5ba-doge.jpg'
+                    document.getElementById("myBody").style.backgroundImage = "url('" + string1 + "')";
+                }
+            </script>
+            <script>
+                function myZoomDogFunction(){
+                    var string2
+                    ='http://i1.kym-cdn.com/photos/images/newsfeed/000/308/455/d6e.jpg'
+                    document.getElementById("myBody").style.backgroundImage = "url('" + string2 + "')";
+                   
+                }
+            </script>
+            <script>
+                function infiniteDoge(){
+                    var string3 = 'https://media.giphy.com/media/aFTt8wvDtqKCQ/giphy.gif'
+                    document.getElementById("myBody").style.backgroundImage = "url('" + string3 + "')";
+                }
+            </script>
+            <script>
+                function stopThis(){
+                    var string4 = 'http://imgur.com/LtapkFv'
 
-                        document.getElementById("myBody").style.backgroundImage = "url('" + string4 + "')";
-                    }
-                </script>
-            </body>
-        </html>
+                    document.getElementById("myBody").style.backgroundImage = "url('" + string4 + "')";
+                }
+            </script>
+            <script>
+                function on() {
+                    document.getElementById("overlay").style.display = "block";
+                }
+
+                function off() {
+                    document.getElementById("overlay").style.display = "none";
+                }
+            </script>
+        </div>
+        <div id="overlay" onclick="off()">
+            <div id="overlayimage"></div>
+        </div>
+    </body>
+</html>
