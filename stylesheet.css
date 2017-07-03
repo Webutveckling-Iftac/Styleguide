@@ -238,50 +238,7 @@ button:hover{
     from{background-color: red}
     to{background-color: aqua}
 }
-.neutralpanel{
 
-    background-color:#f28d13;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #f28d13;
-    border-right-color: #f28d13;
-    border-right-width: thin;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px;  
-}
-.positivepanel{
-    background-color:#13adf2;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #13adf2;
-    border-right-color: #13adf2;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px; 
-}
-.negativepanel{
-    background-color:#ea3255;
-    border: 5px;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-bottom-width: thin;
-    border-left-color: #ea3255;
-    border-right-color: #ea3255;
-    border-bottom-left-radius: 35px;
-    border-style:inset;
-    border-right-style: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 @keyframes alterheadercolors{
     from {color:yellow}
     to {color:orange}
