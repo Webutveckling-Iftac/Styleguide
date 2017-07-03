@@ -221,6 +221,8 @@ button:hover{
     padding-right: 15px; 
     padding-top:10px; 
     padding-bottom: 10px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
 }
 .panel--neutral{
     background-color:#f28d13;
