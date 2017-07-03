@@ -5,6 +5,7 @@ html{
     background: linear-gradient(to bottom,  #a90329 48%,#8f0222 68%,#8f0222 68%,#6d0019 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */ 
 }
+
 h1, h2, h3, h4{
 	color: yellow;
     text-shadow: 3px 10px 5px black;
@@ -21,24 +22,30 @@ body{
     max-width:2000px
         margin:auto;
 }
+
 table, tr, td{
 	border-collapse: collapse;
     border: 2px solid black;
 }
+
 tr > td{
 	padding: 5px;
     padding-right: 20px;
 	text-align: center;
 }
+
 tr:nth-child(even){
 	background: #e54f22;
 }
+
 tr:nth-child(odd){
 	background: #e5881c; 
 }
+
 ul, li{
     list-style:circle;
 }
+
 button{
     color: yellow;
     text-align: center;
@@ -50,45 +57,44 @@ button{
     border-style: double;
     border-radius: 14px
 }
+
 button.button-big{
     font-size: 22px;
     padding: 25px 80px;
 }
+
 button.button--medium{
     font-size: 22px;
     padding: 14px 40px;
 }
+
 button.button--small{
     font-size: 22px;
     padding: 6px 20px;
 }
+
 button.negative--button{
     color: #000000;
     background-color: #ff0000;
     border-color: #000000;
 }
+
 button.positive--button{
     color: #000000;
     background-color: #7cfc00;
     border-color: #000000;
 }
+
 button:hover{
     animation-name: buttonhover;
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-    @keyframes buttonhover{
-        from{border-style: dashed;}
-        to{border-style:double}
-    }
-div.para{
-    color: orange;
-}
-.para{
-    color:orange;
-    border-style: dashed;
-    border-radius: 14px
+
+@keyframes buttonhover{
+    from{border-style: dashed;}
+    to{border-style:double}
 }
 .left {
     float: left;
