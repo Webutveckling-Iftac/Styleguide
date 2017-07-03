@@ -7,7 +7,7 @@ html{
 }
 
 h1, h2, h3, h4{
-	color: yellow;
+    color: yellow;
     text-shadow: 3px 10px 5px black;
     font-family: sans-serif;
     animation-name: alterheadercolors;
@@ -24,22 +24,22 @@ body{
 }
 
 table, tr, td{
-	border-collapse: collapse;
+    border-collapse: collapse;
     border: 2px solid black;
 }
 
 tr > td{
-	padding: 5px;
+    padding: 5px;
     padding-right: 20px;
-	text-align: center;
+    text-align: center;
 }
 
 tr:nth-child(even){
-	background: #e54f22;
+    background: #e54f22;
 }
 
 tr:nth-child(odd){
-	background: #e5881c; 
+    background: #e5881c; 
 }
 
 ul, li{
@@ -96,89 +96,77 @@ button:hover{
     from{border-style: dashed;}
     to{border-style:double}
 }
+
 .left {
     float: left;
     width: 300px;
     padding: 10px;
     margin-right: 10px;
 }
+
 .right {
     float: auto;
     width: 300px;
     padding: 10px;
     margin-left: 10px
 }
+
 .nav ul {
-  list-style: none;
-  background-color: #000000;
-  text-align: left;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    background-color: #000000;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
+
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  text-align: center;
-  height: 40px;
-  border-bottom: 1px solid #888;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    border-bottom: 1px solid #888;
 }
- 
+
 .nav a {
-  text-decoration: none;
-  color: #f5d210;
-  display: block;
-  transition: .3s background-color;
+    text-decoration: none;
+    color: #f5d210;
+    display: block;
+    transition: .3s background-color;
 }
- 
+
 .nav a:hover {
-  background-color: #005f5f;
+    background-color: #005f5f;
 }
- 
+
 .nav a.active {
-  background-color: #ea923a;
-  color: #000000;
-  cursor: default;
+    background-color: #ea923a;
+    color: #000000;
+    cursor: default;
 }
- 
+
 @media screen and (min-width: 600px){
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4em;
     }
 }
- 
-  /* Option 1 - Display Inline */
-  .nav li {
+
+.nav li {
     display: inline-block;
     margin-right: -4px;
-  }
-    
-    p.notification{
-        border-radius: 10px;
-        padding: 10px;
-        
-    }
-    
-    p.notification{
-        background-color: cadetblue;
-    }
-    
-    p.success{
-        background-color: green;
-    }
-  
-    
-.nav li {
-display: inline-block;
-margin-right: -4px;
 }
-    
 
-    .loader {
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+
+.loader {
     margin: auto;
     width: 25px;
     height: 25px;
@@ -242,14 +230,14 @@ margin-right: -4px;
     background-color:#ea3255;
 }
 
-    @keyframes alterheadercolors{
-        from {color:yellow}
-        to {color:orange}
-    }
-    @keyframes gonuts{
-        from{background-color: red}
-        to{background-color: aqua}
-    }
+@keyframes alterheadercolors{
+    from {color:yellow}
+    to {color:orange}
+}
+@keyframes gonuts{
+    from{background-color: red}
+    to{background-color: aqua}
+}
 .neutralpanel{
 
     background-color:#f28d13;
@@ -267,7 +255,7 @@ margin-right: -4px;
     padding-right: 15px;  
 }
 .positivepanel{
-      background-color:#13adf2;
+    background-color:#13adf2;
     border: 5px;
     border-top-color: black;
     border-bottom-color: black;
@@ -281,7 +269,7 @@ margin-right: -4px;
     padding-right: 15px; 
 }
 .negativepanel{
-      background-color:#ea3255;
+    background-color:#ea3255;
     border: 5px;
     border-top-color: black;
     border-bottom-color: black;
