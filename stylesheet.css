@@ -239,8 +239,10 @@ p.success{
     border-right-style: hidden;
     padding-left: 22px;
     padding-right: 15px; 
-    padding-top:10px; 
+    padding-top:10px;
     padding-bottom: 10px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
 }
 
 .panel--neutral{
@@ -277,6 +279,7 @@ p.success{
     border-right-color: #f28d13;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
+    min-width: 300px;
 }
 .container{
     display: flex;

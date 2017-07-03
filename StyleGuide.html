@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="stylesheet.css"> 
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
-    <body id ="myBody">  
+    <body id ="myBody"> 
         <div id=mainDiv>
             <div id="navigation" class="nav">
                 <h3>Navigation:</h3>
@@ -163,18 +163,6 @@
                 </div>
             </div>
             <br>
-            <div id ="forms">
-                <h3>Form style:</h3>
-                <form class="form">
-                    <label for="fName">Name:</label><input id="fName"/><br>
-                    <label for="sName">Surname:</label><input id="sName"/><br>
-                    Gender:<br>
-                    <label for="male">Male:</label><input type="radio" id="male" name="male" value="male"/><br>
-                    <label for="female">Female:</label><input type="radio" id="female" name="female" value="female"/><br>
-                    <label for="other">Other:</label><input type="radio" id="other" name="other" value="other"/><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
             <img id="imgtest" />
             <script>
                 function mySealFunction(){
@@ -218,8 +206,20 @@
                 }
             </script>
         </div>
-        <div id="overlay" onclick="off()">
-            <div id="overlayimage"></div>
+        <br>
+        <div id ="forms">
+            <h3>Form style:</h3>
+            <form class="form">
+                <label for="fName">Name:</label><input id="fName"/><br>
+                <label for="sName">Surname:</label><input id="sName"/><br>
+                Gender:<br>
+                <label for="male">Male:</label><input type="radio" id="male" name="male" value="male"/><br>
+                <label for="female">Female:</label><input type="radio" id="female" name="female" value="female"/><br>
+                <label for="other">Attack helicopter:</label><input type="radio" id="other" name="other" value="other"/><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
+        <div id="overlay" onclick="off()"> </div>
+        <div id="overlayimage"></div>
     </body>
 </html>
