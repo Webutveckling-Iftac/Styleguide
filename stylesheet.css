@@ -386,13 +386,17 @@ div.error{
     100% {
         opacity: 1;
     }
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+    from{height: 1px; width: 1}
+    to{height: 100%; width: 100%;}  
 }
 
 #overlay {
     background-image:url('https://media.giphy.com/media/LXONhtCmN32YU/giphy.gif');
     background-size: cover;
     animation-name:fadeIn;
-    animation-duration: 4s;
+    animation-duration: 6s;
     position: fixed;
     display: none;
     width: 100%;
@@ -403,5 +407,5 @@ div.error{
     bottom: 0;
     cursor: url('http://www.crossfire.nu/_cache/media/users/rRX.U-rick-astley_45x20.png'), pointer;
     z-index: 2; 
-    
+
 }
