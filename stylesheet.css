@@ -58,7 +58,7 @@ button{
     border-radius: 14px
 }
 
-button.button-big{
+button.button--big{
     font-size: 22px;
     padding: 25px 80px;
 }
@@ -256,4 +256,5 @@ button:hover{
     border-right-color: #f28d13;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
+    min-width: 300px;
 }
